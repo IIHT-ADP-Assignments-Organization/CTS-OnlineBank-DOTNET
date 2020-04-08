@@ -686,23 +686,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hp\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\SHINE\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\Desktop\\OnlineBank\\OnlineBank-DotNet\\OnlineBank.Entities\\OnlineBank.Entities.csproj",
+      "projectUniqueName": "E:\\Shilpa\\OnlineBank-DotNet\\OnlineBank.Entities\\OnlineBank.Entities.csproj",
       "projectName": "OnlineBank.Entities",
-      "projectPath": "C:\\Users\\hp\\Desktop\\OnlineBank\\OnlineBank-DotNet\\OnlineBank.Entities\\OnlineBank.Entities.csproj",
-      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\Desktop\\OnlineBank\\OnlineBank-DotNet\\OnlineBank.Entities\\obj\\",
+      "projectPath": "E:\\Shilpa\\OnlineBank-DotNet\\OnlineBank.Entities\\OnlineBank.Entities.csproj",
+      "packagesPath": "C:\\Users\\SHINE\\.nuget\\packages\\",
+      "outputPath": "E:\\Shilpa\\OnlineBank-DotNet\\OnlineBank.Entities\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SHINE\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -734,10 +730,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

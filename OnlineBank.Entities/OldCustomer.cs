@@ -4,9 +4,8 @@ using System.Text;
 
 namespace OnlineBank.Entities
 {
-   public class Customer
+    public class OldCustomer
     {
-        public int Id { get; set; }
         public long AccountNumber { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }

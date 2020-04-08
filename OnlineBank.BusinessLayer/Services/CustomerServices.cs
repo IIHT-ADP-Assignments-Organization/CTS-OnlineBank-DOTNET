@@ -7,29 +7,39 @@ using System.Text;
 
 namespace OnlineBank.BusinessLayer.Services
 {
-   public class CustomerServices : ICustomerService
+    public class CustomerServices : ICustomerService
     {
-            private readonly IMapperSession _session;
+        private readonly IMapperSession _session;
 
-            public CustomerServices(IMapperSession session)
-            {
-                _session = session;
-            }
+        public CustomerServices(IMapperSession session)
+        {
+            _session = session;
+        }
 
         public double CheckBalance(long accountNumber)
         {
             throw new NotImplementedException();
         }
 
-            public bool CloseAccount(long accountNumber, string userName, string password)
+        public OldCustomer GetOldCustomer(long accountNumber, string userName, string password)
         {
-            return false;
+             OldCustomer oldCustomer = new OldCustomer();
+            return oldCustomer;
         }
 
-        public bool CreateAccount(Customer customer)
+
+        public OldCustomer CloseAccount(long accountNumber, string userName, string password)
         {
-            return false;
+            OldCustomer oldCustomer = new OldCustomer();
+            return oldCustomer;
         }
+
+        public int CreateAccount(Customer customer)
+        {
+            Customer customer1 = new Customer();
+            var CutomerId = customer1.Id;
+            return CutomerId;
+        } 
 
         public bool Deposit(long accountNumber, string userName, double amount)
         {

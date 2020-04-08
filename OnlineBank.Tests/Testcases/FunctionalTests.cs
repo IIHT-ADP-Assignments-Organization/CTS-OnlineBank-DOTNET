@@ -42,7 +42,8 @@ namespace BusTicketReservationSystem.Tests.TestCases
             //Action
             var IsRegistered = _service.CreateAccount(customer);
             //Assert
-            Assert.True(IsRegistered);
+            var Result = IsRegistered.ToString();
+            Assert.NotNull(Result);
         }
 
         [Fact]
@@ -169,8 +170,9 @@ namespace BusTicketReservationSystem.Tests.TestCases
            
             //Action
             var IsBooked = _service.CloseAccount(customer.AccountNumber,customer.UserName, customer.Password);
+            var GetoldCustomerAccount = _service.GetOldCustomer(customer.AccountNumber, customer.UserName, customer.Password);
             //Assert
-            Assert.True(IsBooked);
+            Assert.Equal(GetoldCustomerAccount, IsBooked);
         }
 
         [Fact]
